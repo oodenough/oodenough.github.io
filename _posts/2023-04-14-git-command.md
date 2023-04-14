@@ -1,5 +1,5 @@
 ---
-categories: command_use git
+categories: install_config_usage git
 tags: [git]
 ---
 

@@ -1,6 +1,6 @@
 ---
-categories: install_config softwares
-tags: [linux, softwares]
+categories: install_config_usage dir
+tags: [linux]
 ---
 
 # shutter on debian-based

@@ -1,6 +1,6 @@
 ---
-categories: install_config shell
-tags: [shell, zsh, oh-my-zsh]
+categories: install_config_usage dir
+tags: [oh-my-zsh]
 ---
 
 * install zsh
