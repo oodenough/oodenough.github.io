@@ -1,3 +1,8 @@
+---
+categories: install_config_usage default
+tags: [git]
+---
+
 # github pages
 
 [gh-pages_stackoverflow](https://stackoverflow.com/questions/25559292/github-page-shows-master-branch-not-gh-pages)

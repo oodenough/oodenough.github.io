@@ -1,5 +1,5 @@
 ---
-categories: install_config_usage dir
+categories: install_config_usage default
 tags: [oh-my-zsh]
 ---
 
