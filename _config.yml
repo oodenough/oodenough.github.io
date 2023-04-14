@@ -20,7 +20,7 @@ timezone:
 
 title: Goodenough # the main title
 
-tagline: A doc site to write blog # it will display as the sub-title
+tagline: A doc site for blogs # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Personal blog to share with everybody !
