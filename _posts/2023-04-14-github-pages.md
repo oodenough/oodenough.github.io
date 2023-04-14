@@ -11,20 +11,21 @@ tags: [git]
 
 
 ### add gh-pages branch
+first create a public repo named `yourblog` and add git connection
 ```bash
 git branch gh-pages #==> add gh-pages branch
-git checkout gh-pages #==> change to gh-pages
+git checkout gh-pages #==> change to gh-pages branch
+ehco "hello world" >> index.html
+git add .
+git commit -m "gh-pages"
 git push -u origin gh-pages #==> push to remote gh-pages branch
 ```
+then browse to `https://username.github.io/yourblog`
 
 ### deploy gh-pages
 head to the repo on github and click
 settings => pages => deploy from gh-pages branch
 
-### head to repo on github
-```console
-settings => pages => branch => gh-pages
-```
 ##### docs
 [gh-pages_stackoverflow](https://stackoverflow.com/questions/25559292/github-page-shows-master-branch-not-gh-pages)
 [github_pages_doc](https://docs.github.com/en/pages)
