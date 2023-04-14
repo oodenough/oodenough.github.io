@@ -16,6 +16,11 @@ git branch gh-pages #==> add gh-pages branch
 git checkout gh-pages #==> change to gh-pages
 git push -u origin gh-pages #==> push to remote gh-pages branch
 ```
+
+### deploy gh-pages
+head to the repo on github and click
+settings => pages => deploy from gh-pages branch
+
 ### head to repo on github
 ```console
 settings => pages => branch => gh-pages
