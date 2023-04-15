@@ -1,6 +1,6 @@
 ---
 categories: w default
-tags: [linux]
+tags: [linux, software]
 ---
 
 # shutter on debian-based
