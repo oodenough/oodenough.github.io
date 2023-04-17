@@ -1,7 +1,7 @@
 ---
 categories: w program
 tags: [program]
-title: "binary program用机器语言编程"
+title: "机器语言编程"
 ---
 
 先写一个C语言程序 
