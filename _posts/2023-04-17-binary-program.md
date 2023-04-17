@@ -1,6 +1,7 @@
 ---
 categories: w program
 tags: [program]
+titlt: "test title"
 ---
 
 先写一个C语言程序 
