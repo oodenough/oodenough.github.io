@@ -7,7 +7,7 @@ Book 1:
 这将成为第一篇读书笔记:) ==> 当我意识到3000字职业规划或者5000字某概可以用chatGPT快速完成时
 **我发现我有很多时间可以用来读书** 所以打算开始在这个books分类下开始写一些读书笔记 摘录一些句子
 ## Just for fun -Linus Torvalds
-* 介绍：本书[Just for fun](https://www.amazon.com/Just-Fun-Story-Accidental-Revolutionary/dp/0066620732)是`Linux`操作系统创始人[Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)的自传 是了解Linux和开源运动的第一手资料
+* 介绍：本书[Just for fun](https://www.amazon.com/Just-Fun-Story-Accidental-Revolutionary/dp/0066620732)是`Linux`操作系统创始人[Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)的自传 是了解[Linux](https://en.wikipedia.org/wiki/Linux)和开源运动的第一手资料
 * 一些摘录：
 1. `信任不是没有用的，在人们相信你时，他们更容易领会你的建议。当然，你首先要建立别人之所以信任你的基础。对我而言，我猜想主要不是因为我发明了Linux的核心部分，而是因为我最终做出了将它放到互联网上、并且对所有希望使用或改进它的人公开源代码的决定。`
 
