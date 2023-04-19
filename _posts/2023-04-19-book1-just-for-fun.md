@@ -1,6 +1,6 @@
 ---
 categories: w books       
-tags: []
+tags: [book]
 ---
 
 这将成为第一篇读书笔记:) ==> 当我意识到3000字职业规划或者5000字某概可以用chatGPT快速完成时
