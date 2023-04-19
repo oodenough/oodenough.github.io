@@ -4,7 +4,7 @@ tags: [book]
 ---
 
 Book 1:
-这将成为第一篇读书笔记:) ==>打算开始在这个books分类下开始写一些读书笔记 摘录一些句子
+这将成为第一篇读书笔记:) ==> 打算开始在这个books分类下开始写一些读书笔记 摘录一些句子
 ## Just for fun -Linus Torvalds
 * 介绍：本书[Just for fun](https://www.amazon.com/Just-Fun-Story-Accidental-Revolutionary/dp/0066620732)是`Linux`操作系统创始人[Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)的自传 是了解[Linux](https://en.wikipedia.org/wiki/Linux)和[开源运动](https://en.wikipedia.org/wiki/Open_source)的第一手资料
 
