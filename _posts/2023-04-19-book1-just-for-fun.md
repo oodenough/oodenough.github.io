@@ -3,6 +3,7 @@ categories: w books
 tags: [book]
 ---
 
+Book 1:
 这将成为第一篇读书笔记:) ==> 当我意识到3000字职业规划或者5000字某概可以用chatGPT快速完成时
 **我发现我有很多时间可以用来读书** 所以打算开始在这个books分类下开始写一些读书笔记 摘录一些句子
 ## Just for fun -Linus Torvalds
