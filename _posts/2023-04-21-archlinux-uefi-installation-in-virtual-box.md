@@ -18,4 +18,6 @@ mount `efi` under `/mnt/boot/efi`
 * tips
 both `cfdisk /dev/sda` and `fdisk /dev/sda` is available when patitioning
 and `cfdisk` is easier to use
+* virtual box use
+1. enable shared clipb
 
