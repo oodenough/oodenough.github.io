@@ -1,6 +1,7 @@
 ---
 categories: [w install]
 tags: [archlinux, oh-my-zsh, install]
+---
 
 ```bash
 git clone https:aur.archlinux.org/yay.git #==> install yay(Yet Another Yoghurt the aur helper)
