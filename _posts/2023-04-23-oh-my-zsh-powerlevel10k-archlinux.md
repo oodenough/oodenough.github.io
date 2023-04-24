@@ -1,5 +1,5 @@
 ---
-categories: [w install]
+categories: w install
 tags: [archlinux, oh-my-zsh, install]
 ---
 
