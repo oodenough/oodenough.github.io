@@ -3,7 +3,7 @@ categories: w books
 tags: [book]
 ---
 
-book2 《黑客与画家》作者`Paul Graham`
+book2 [《黑客与画家》](https://en.wikipedia.org/wiki/Hackers_%26_Painters)作者[Paul Graham](https://en.wikipedia.org/wiki/Paul_Graham_(programmer))
 * 一些摘录
 1. `计算机程序只是文本而已。你选择什么语言，决定了你能说什么话。编程语言就是程序员的思维方式。因此很自然，编程语言对程序员的思想有巨大的影响。`
 2. `根据使用语言的不同，程序员往往会被分成不同的派别。人们区分程序员甚至不是看他们写了什么程序，而是看他们使用什么语言。所以，声称一种语言优于另一种语言被认为是不礼貌的行为。但是，没有一个编程语言的设计者会相信“不同的语言各有千秋”这种文绉绉的可套话。`
