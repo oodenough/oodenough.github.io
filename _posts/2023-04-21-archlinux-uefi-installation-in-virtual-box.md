@@ -1,5 +1,5 @@
 ---
-categories: w install
+categories: w default
 tags: [virtualization, linux, archlinux]
 ---
 

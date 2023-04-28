@@ -1,5 +1,5 @@
 ---
-categories: w git
+categories: w default
 tags: [git]
 ---
 
