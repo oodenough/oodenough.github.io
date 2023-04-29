@@ -55,6 +55,18 @@ NIL
 9. `memberp`
 10. `format and read`
 11. `boundp`
+12. `remove` takes an object and a list and returns a new list containing everything but that object
+```lisp
+> (setf lst '(c a r a t))
+(C A R A T)
+> (remove 'a lst)
+(C R T);the original list is untouched
+> lst
+(C A R A T)
+> (setf lst (remove 'a lst));change the original list
+```
+13. `progn` takes any number of expressions, evaluates them in order, and returns the value of the last.
+14. `apply and funcall`
 
 ## Chapter1 Introduction
 
@@ -180,7 +192,7 @@ Because everyone uses the same conventions, you can read code by the indentation
 ### 2.9 Input and Output
 `format` function takes two or more arguments: the first indecates where the output is to be printed, the second is a string template, and the remaining arguments are usually objects whose printed representions are to be inserted into the template.
 ```lisp
-> (format t "~A plus ~A equals ~A.~% 2 3 (+ 2 3))
+> (format t "~A plus ~A equals ~A.~%" 2 3 (+ 2 3))
 2 plus 3 equals 5.
 NIL
 ```
@@ -242,7 +254,6 @@ Such a variable will then be accessible everywhere, except in expressions that c
 Thers is need to give constants distinctive names, because it will cause an error if anyone uses the same name for a variable.
 
 function `boundp` can test whether some symbol is the name of a global variable or constant
-```lisp
 
 ### 2.11 Assignment
 In CL, the most general assignment operator is `setf`.
@@ -271,7 +282,78 @@ You can give any(even) number of arguments to `setf`:
 (setf e f)
 ```
 
-### Functional Programming
+### 2.12 Functional Programming
+`Functional programming` means writing programs that work by returning value, **instead of by modifying things**.It is the dominant paradigm in Lisp.
+
+Most built-in Lisp functions are meant to be called for the values they return, not for side-effects.The more side-effects you do without, the better off you'll be.
+
+function `remove`
+
+One of the most important advantage of functional programming is that it allows `interactive testing`.
+
+### 2.13 Iteration
+The `do` macro is the fundamental iteration operator in CL.
+```lisp
+;do
+(do ((variable initial update))
+    ((test expression) (failed expression))
+  (body of the loop))
 
 
+(defun show-squares (start end)
+  (do ((i start (+ i 1)))
+      ((> i end) 'done)
+    (format t "~A ~A~%" i (* i i))))
+
+;recursive show-squares
+(defun show-squares (i end)
+  (if (> i end)
+      'done
+      (progn 
+        (format t "~A ~A~%" i (* i i))
+	(show-squares (+ i 1) end))))
+
+;cond version avoids the nested progn
+(defun show-squares (i end)
+  (cond ((> i end) 'done)
+	(t (format t "~A ~A~%" i (* i i))
+	   (show-squares (+ i 1) end))))
+
+;dolist
+(dolist (variable expression)
+  (body of expressions))
+  
+(defun our-length (lst)
+  (let ((len 0))
+    (dolist (obj lst)
+      (setf len (+ len 1)))
+    len))
+
+;recursive our-length
+(defun out-length (lst)
+  (if (null lst)
+      0
+      (+ (our-length (cdr lst)) 1)))
+```
+
+### 2.14 Function as Objects
+If we give the name of a function to `function`, it will return the associated object. `function` is a `special operator`, so we don't have to quote the argument.
+ 
+We can use `#'`(sharp-quote) as an abbreviation for `function`.
+```lisp
+> (function +))
+#<Compiled-Function +>
+> #'+
+#<Compiled-Function +>
+```
+Internally, a built-in function like + is likely to be a segment of machine language code.
+
+Like any other kind of object, we can pass functions as arguments.
+
+`apply` function takes a function and a list of arguments for it, and return the result of applying the function to the arguments:
+```lisp
+> (apply #'+ 1 2 '(3 4 5));the last has to be a list
+15
+> (funcall #'+ 1 2 3 4 5); do the same, the last one doesn't need to be a list
+15
 ```
