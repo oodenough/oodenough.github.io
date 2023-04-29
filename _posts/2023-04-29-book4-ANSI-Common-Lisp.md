@@ -7,12 +7,12 @@ tags: [book, program, lisp]
 Some comments: [northwestern.edu](https://courses.cs.northwestern.edu/325/readings/graham/graham-notes.html)
 
 ## All Functions
-`1. list` builds lists
+1. `list` builds lists
 ```lisp
 > (list 'my (+ 1 2) "Sons")
 (MY 3 "Sons")
 ```
-`2. cons` builds lists
+2. `cons` builds lists
 ```lisp
 > (cons 'a '(b c d)) ;return a new list with the first element added to the front if its second argument is a list
 (A B C D)
@@ -21,34 +21,49 @@ Some comments: [northwestern.edu](https://courses.cs.northwestern.edu/325/readin
 > (cons 'a 'b)
 (A B)
 ```
-`3. car 4. cdr 5. third fourth...` can extract the elements of lists
+3. `car` 
+4. `cdr` 
+5. `third and fourth...` can extract the elements of lists
 ```lisp
 > (car (cdr (cdr '(a b c d))));use combinations to reach any element of a list
 C
 > (third '(a b c d));or simply call third 
 C
 ```
-`6. listp` returns true if its argument is a list
+6. `listp` returns true if its argument is a list
+other predicate function:`numberp`
 ```list
 > (listp '(a b c))
 T
 ```
-`7. null and not and or`
+7. `null and not and or`
 ```lisp
 > (null nil)
 T
 > (not nil)
 T
 ```
+8. `member` tests whether something is an element of a list
+```lisp
+> (member 'a '(b c))
+NIL
+> (member 'c '(a c b))
+(C B)
+> (member 'c '(a c b c d e))
+(C B C D E)
+```
+9. `memberp`
+10. `format and read`
+11. `boundp`
 
-### Chapter1 Introduction
+## Chapter1 Introduction
 
-### Chapter2 Welcome to Lisp
+## Chapter2 Welcome to Lisp
 
-#### 2.1 Form
+### 2.1 Form
 Lisp is an interactive language. Any Lisp system will include an interactive front-end called the `toplevel`.
 
-#### 2.2 Evaluation
+### 2.2 Evaluation
 In Lisp, `+` is a function, and an `expression` like (+ 2 3) is a `function call`.
 
 Not all the `operators` in Common Lisp are functions, but most are.
@@ -62,7 +77,7 @@ Not all the `operators` in Common Lisp are functions, but most are.
 
 For convenience, Common Lisp defines `'` as an abbreiation for `quote`.
 
-#### 2.3 Data
+### 2.3 Data
 two Lisp `data types` we don't commonly find in other languages are `symbols` and `lists`.
 
 `symbols` are words, ordinarily converted to uppercase, not (usually) evaluate to themselves, so `quote` it when refering them.
@@ -73,12 +88,12 @@ Two ways of representing the empty list in cl:`()` or `nil`
 
 `nil` evaluates to itself ==> no `quote` needed
 
-#### 2.4 List Operations
+### 2.4 List Operations
 1. cons
 2. car cdr
 3. third
 
-#### 2.5 Truth
+### 2.5 Truth
 symbol `t` representes truth. Like `nil`, `t` evaluates to itself.
 
 function 6 `listp`
@@ -110,7 +125,7 @@ The `logical operators` like `and` and `or` resemble conditionals.
 `or` stops as soon as it finds an argument that is true.
 These two `operators` are `macros`. Like `special operators`, `macros` can circumvent the usual evaluation rule.
 
-#### 2.6 Functions
+### 2.6 Functions
 define new functions with `defun`. it usually take three arguments.
 ```lisp
 (defun name (a list of parameters)
@@ -130,5 +145,133 @@ A `symbol` used as a `placeholder` in this way is called a `variable`. Also call
 
 `Lisp makes no distinction between a program, a procedure, and a function.`
 
-#### 2.7 Recursion
+### 2.7 Recursion
+a simplified version of `member` function defined as a recursive function
+```lisp
+(defun our-member (obj lst)
+  (if (null lst)
+      nil
+      (if (eql (car lst) obj)
+	  lst
+	  (our-member obj (cdr lst))))) 
+```
+some critical comments on Graham's preference for `if` over `cond`=> [click](https://courses.cs.northwestern.edu/325/readings/graham/chap2-notes.html)
+`cond` example:
+```lisp
+(cond (condition1 expression)
+      (condition2 expression)
+      ...
+      (conditionn expression)
+```
+a better vision of `our-member`:avoids the `nested conditional`
+```lisp
+(defun our-member (obj lst)
+  (cond ((null lst) nil)
+	((eql (car lst) obj) lst)
+	(t (our-member obj (cdr lst)))))
+```
+A better metaphor for a function would be to think of it as a `process`.
 
+### 2.8 Reading Lisp
+Lisp programmers read and write code by indentation, not by parentheses.
+
+Because everyone uses the same conventions, you can read code by the indentation, and ignore the parentheses.
+
+### 2.9 Input and Output
+`format` function takes two or more arguments: the first indecates where the output is to be printed, the second is a string template, and the remaining arguments are usually objects whose printed representions are to be inserted into the template.
+```lisp
+> (format t "~A plus ~A equals ~A.~% 2 3 (+ 2 3))
+2 plus 3 equals 5.
+NIL
+```
+`NIL` is the value returned by the call to format, displayed in the usual way by the `toplevel`. 
+
+Ordinarily a function like `format` is not called directly from the toplevel, but used within programs, so the return value is never seen.
+
+`t` indicates that the output is to be sent to the default place. Ordinarily this will be the `toplevel`.
+
+`~A` indicates a position to be filled, and the `~%` indicates a newline. The positions are filled by the values of the remaining arguments, in orger.
+
+`read` function is a standard function for input. When given no arguments, it reads from the default place, which will usually be the `toplevel`.
+```lisp
+(defun ask (str)
+  (format t "~A " str)
+  (read))
+
+> (ask "How old are you?")
+How old are you? 23
+
+23
+```
+`Bear in mind` that `read` will sit waiting indefinetely until you type something and (usually) hit return.
+
+Actually, read is a complete `Lisp parser`. It doesn't just read characters and return them as a string. It parses what it reads, and returns the Lisp object that results.
+
+`ask` function's body contains more than one expression. The body of a function can have any number of expressions. When the function is called, they will be evaluated in order, and the function will return the value of the last one.
+
+`Pure Lisp`: Lisp without `side-effects`. A side-effect is some change to the state of the world that happers as a consequence of evaluating an expression. When we evaluate a pure Lisp expression like (+ 1 2), there are no side-effects; it just returns a value. But when we call `format`, as well as returning a value, it prints something. That's one kind of `side-effect`.
+
+When we are writing code without `side-effects`, there is no point in defining functions with bodies of more than one expression. The value of the last expression is returned as the value of the function, but the values of any preceding expressions are thrown away. If such expresssions didn't have side-effects, you would have no way of telling whether Lisp bothered to evaluate them at all.
+
+### 2.10 Variables
+`let` allows you to introduce new `local variables`:
+```lisp
+> (let ((x 1) (y 2))
+    (+ x y)
+3
+```
+a `let` version of ask:
+```lisp
+(defun ask-number ()
+  (format t "Please enter a number: ")
+  (let ((val (read)))
+    (if (numberp val)
+	val
+	(ask-number))))
+```
+try a `cond` version? faied
+
+`defparameter`allows you to introduce `global variable`:
+```lisp
+> (defparameter *glob* 99)
+*GLOB*;`start-glob-star`
+```
+Such a variable will then be accessible everywhere, except in expressions that create a new local variable with the same name. To avoid the possibility of this happening by accident, it's conventional to giev global variables names surrounded by asterisks`*`. 
+
+`defconstant` allows you to introduce `global constants`.
+Thers is need to give constants distinctive names, because it will cause an error if anyone uses the same name for a variable.
+
+function `boundp` can test whether some symbol is the name of a global variable or constant
+```lisp
+
+### 2.11 Assignment
+In CL, the most general assignment operator is `setf`.
+```lisp
+> (let ((x 10))
+    (setf x 2)
+    x)
+```
+When the first argument to `setf` is a symbol that is not the name of a local variable, it is taken to be a `global variable`.That is, you can create global variables implicitly, just by assigning them values. In source files, at least, it is better style to use explicit `defparameter`.
+
+the first argument to `setf` can be almost any expression that refers to a particular place:
+```lisp
+> (setf x (list 'a 'b 'c))
+(A B C)
+> (setf (car x) 'n)
+(N B C)
+```
+You can give any(even) number of arguments to `setf`:
+```lisp
+(setf a b
+      c d 
+      e f)
+;this is equivalent to :
+(setf a b)
+(setf c d)
+(setf e f)
+```
+
+### Functional Programming
+
+
+```
