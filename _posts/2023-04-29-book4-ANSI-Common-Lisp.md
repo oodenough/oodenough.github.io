@@ -67,6 +67,11 @@ NIL
 ```
 13. `progn` takes any number of expressions, evaluates them in order, and returns the value of the last.
 14. `apply and funcall`
+15. `typep`
+```lisp
+> (typep 27 'integer)
+T
+```
 
 ## Chapter1 Introduction
 
@@ -357,3 +362,29 @@ Like any other kind of object, we can pass functions as arguments.
 > (funcall #'+ 1 2 3 4 5); do the same, the last one doesn't need to be a list
 15
 ```
+`lambda expression`:functions don't have to have names, and we don't need defun to define them.
+```lisp
+> ((lambda (x) (+ x 100)) 1)
+101
+(funcall #'(lambda (x) (+ x 1)) 1)
+101
+```
+
+### 2.15 Types
+In Common Lisp, `values` have types, not `variables`
+You could imagine that every object had a label attached to it, identifying its type.This approach is called `manifest typing`. You don't have to declare the types of variables, because any variable can hold objects of any type.
+
+An object has more that one type.
+The type `t` is the supertype of all types, so everything is of type `t`
+
+function: `typep`
+
+### 2.16 Looking Forward
+
+
+## Chapter3 Lists
+
+
+
+
+
