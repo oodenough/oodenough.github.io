@@ -73,6 +73,10 @@ NIL
 > (typep 27 'integer)
 T
 ```
+16. `consp` & `atom`
+17. `equal`
+18. `copy-list` => new cons
+19. `append` returns the concatenation of any number of lists
 
 ## Chapter1 Introduction
 
@@ -385,7 +389,77 @@ function: `typep`
 
 ## Chapter3 Lists
 
+### 3.1 Conses
+keywords: `box notation` `nested list` `flat list`
+function: `consp` returns true if its argument is a `cons`.
+So `listp` could be defined:
+```lisp
+(defun our-listp (x)
+  (or (null x) (consp x)))
+```
+Since everything that is not a cons is an `atom`, the predicate `atop` could be defined:
+```lisp
+(defun our-atom (x) (not (consp x)))
+```
+Note that `nil` is both an `atom` and a `list`
 
+### 3.2 Equality
 
+Each time you call `cons`, Lisp allocates a new piece of memory with room for two pointers. So if we call cons twice with the same arguments, we get back two values that look the same, but are in fact distinct objects:
+```lisp
+> (eql (cons 'a nil) (cons 'a nil))
+NIL
+```
+function:`equal` will be more convenient if we want to ask whether two lists had the same elements.
+`eql` returns true only if its arguments are the `same objects`
+```lisp
+> (setf x (cons 'a nil))
+(A)
+> (eql x x)
+T
+```
+`equal` returns true if its arguments would `print the same`
+```lisp
+> (equal x (cons 'a nil))
+T ;this predicate works for other kinds of structures besides lists
+```
+rewrite `equal` :(only works on lists structures)
+```lisp
+(defun our-equal (x y)
+  (or (eql x y)
+      (and (consp x)
+	   (consp y)
+ 	   (our-equal (car x) (car y))
+	   (our-equal (cdr x) (cdr y)))))
+```
 
+### 3.3 Why Lisp Has No Pointers
 
+```lisp
+(setf x '(a b c))
+(setf y '(a b c)) ;here x and y both have a pointer pointing at the same location in memory where the '(a b c) is saved
+```
+The reason Lisp has no pointers in that every value is conceptually a pointer. When you assign a value to a variable or store it in a data structure, what gets stored is actually a pointer to the value. 
+
+For efficiency, Lisp will sometimes choose to use an immediate representation instead of a pointer.
+
+### 3.4 Building Lists
+function `copy-list`: takes a list and returns a copy of it. The new list will have the same elements, but contained in `new conses`
+```lisp
+> (setf x '(a b c)
+      y (copy-list x))
+(A B C)
+```
+rewrite `copy-list`:
+```lisp
+(defun our-copy-list (lst)
+  (if (atom lst)
+      lst
+      (cons (car lst) (our-copy-list (cdr lst)))))
+```
+function: `append`
+```lisp
+> (append '(a b) '(c d) '(e))
+(A B C D E)
+```
+      
