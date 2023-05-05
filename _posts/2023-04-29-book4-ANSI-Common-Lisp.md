@@ -397,7 +397,7 @@ So `listp` could be defined:
 (defun our-listp (x)
   (or (null x) (consp x)))
 ```
-Since everything that is not a cons is an `atom`, the predicate `atop` could be defined:
+Since everything that is not a cons is an `atom`, the predicate `atom` could be defined:
 ```lisp
 (defun our-atom (x) (not (consp x)))
 ```
@@ -456,7 +456,12 @@ rewrite `copy-list`:
   (if (atom lst)
       lst
       (cons (car lst) (our-copy-list (cdr lst)))))
+;critics here a better vision is below
+(defun our-copy-list (lst)
+  (cond ((null lst) lst)
+        (t (cons (car lst) (our-copy-list (cdr lst))))))
 ```
+[graham cracker](https://courses.cs.northwestern.edu/325/readings/graham/chap3-notes.html)
 function: `append`
 ```lisp
 > (append '(a b) '(c d) '(e))
