@@ -19,3 +19,5 @@ p10k configure #==> reset powerlevel10k
 git -C ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k pull #==> update the theme
 ```
 
+
+
