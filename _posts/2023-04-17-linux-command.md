@@ -3,7 +3,7 @@ categories: w default
 tags: [command]
 ---
 
-* ？？
+* sexy
 ```bash
 dpkg --print-architecture #==> check the cpu architecture
 [ -d /sys/firmware/efi ] && echo "UEFI mode" || echo "BIOS mode"
