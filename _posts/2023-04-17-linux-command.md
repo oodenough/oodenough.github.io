@@ -1,6 +1,6 @@
 ---
 categories: w default
-tags: [command]
+tags: [linux]
 ---
 
 * sexy
