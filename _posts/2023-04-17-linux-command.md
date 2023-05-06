@@ -21,5 +21,6 @@ dpkg --print-architecture #==> check the cpu architecture
 * check information
 5. `e2label /dev/sda1 labelname`
 6. `blkid`
+7. `df -h`
 
 
