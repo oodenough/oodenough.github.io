@@ -4,7 +4,7 @@ tags: [archlinux, oh-my-zsh, install]
 ---
 
 ```bash
-git clone https:aur.archlinux.org/yay.git #==> install yay(Yet Another Yoghurt the aur helper)
+git clone https://aur.archlinux.org/yay.git #==> install yay(Yet Another Yoghurt the aur helper)
 cd yay
 makepkg -si 
 yay -S(yayn) ttf-dejavu ttf-meslo-nerd-font-powerlevel10k #==> install font
