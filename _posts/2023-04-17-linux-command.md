@@ -18,9 +18,14 @@ dpkg --print-architecture #==> check the cpu architecture
 3. `cfdisk /dev/sda`
 4. `gdisk /dev/sda`
 
-* check information
+* check/modify bulk information
 5. `e2label /dev/sda1 labelname`
 6. `blkid`
 7. `df -h`
+
+## Files
+* check file/directory volume
+1. `ls -lh `
+2. `du -h`
 
 
