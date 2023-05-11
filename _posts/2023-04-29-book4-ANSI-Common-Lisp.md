@@ -1,7 +1,7 @@
 ---
 categories: w books       
 tags: [book, program, lisp]
-pin: true
+pin: false
 ---
 
 # ANSI Common Lisp -- Paul Graham
