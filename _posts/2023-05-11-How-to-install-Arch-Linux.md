@@ -2,6 +2,7 @@
 categories: w default
 tags: [linux, archlinux]
 ---
+
 ## check the internet
 ```bash
 iwctl #==> enter a iwd interactive prompt
