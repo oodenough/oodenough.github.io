@@ -1,12 +1,17 @@
 ---
 categories: w default
 tags: [linux]
+pin: true
 ---
 
-* sexy
 ```bash
+du -h / | sort -rh | head -n 10
 dpkg --print-architecture #==> check the cpu architecture
+arch
 [ -d /sys/firmware/efi ] && echo "UEFI mode" || echo "BIOS mode"
+ssh-keygen -p -f ~/.ssh/id_rsa #==> reset the pathphrase for rsa keys
+sudo dpkg-reconfigure console-setup #==> set the font for tty
+cat /etc/passwd | grep -v nologin #==> validate users
 ```
 
 ## Disk/Partitions
