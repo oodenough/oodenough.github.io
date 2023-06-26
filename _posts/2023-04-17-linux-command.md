@@ -1,9 +1,10 @@
 ---
-categories: w default
+categories: 2023 04
 tags: [linux]
 pin: true
 ---
 
+* just some linux commands
 ```bash
 du -h / | sort -rh | head -n 10
 dpkg --print-architecture #==> check the cpu architecture
@@ -32,5 +33,3 @@ cat /etc/passwd | grep -v nologin #==> validate users
 * check file/directory volume
 1. `ls -lh `
 2. `du -h`
-
-

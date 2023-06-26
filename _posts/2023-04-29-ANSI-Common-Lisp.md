@@ -1,6 +1,6 @@
 ---
-categories: w books       
-tags: [book, program, lisp]
+categories: 2023 04       
+tags: [lisp]
 pin: false
 ---
 

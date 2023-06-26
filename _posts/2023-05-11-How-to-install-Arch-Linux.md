@@ -1,9 +1,9 @@
 ---
-categories: w default
-tags: [linux, archlinux]
+categories: 2023 05
+tags: [linux]
 ---
 
-## check the internet
+## 联网 internet
 ```bash
 iwctl #==> enter a iwd interactive prompt
 device list #==> list available internet device
@@ -28,7 +28,7 @@ Server = https://mirrors.xjtu.edu.cn/archlinux/$repo/os/$arch
 timedatectl set-ntp true
 ```
 
-## patition your disk
+## 分盘 disk partition
 ```bash
 lsblk #==> list thd available disk and its patitions
 fdisk -l #==> save as above but provide more information
@@ -36,8 +36,9 @@ gdisk /dev/sda #==> pacman -S gptdisk
 fdisk /dev/sda #==> command line mode
 cfdisk /dev/sda #==> easy to use
 ```
-`swap` is optional
-`EFI` is needed by UEFI 
+`swap` is optional 
+UEFI需要`EFI`分区 BIOS不需要 
+efi的disk lable type是`gpt`而不是`dos` 
 
 file system:
 ```bash
@@ -47,27 +48,27 @@ mkfs.fat -F32 /dev/sda3
 ```
 mount:
 ```bash
-swapon /dev/sdaa
+swapon /dev/sda1
 mount /dev/sda2 /mnt/boot/efi
-#==> mount device in a deeper directory first
+#==> 挂载顺序应该从里往外
 mount /dev/sda3 /mnt
 ```
 
-## download your system
+## 下载系统 download
 keyring:
 ```bash
 pacman -Sy archlinux-keyring
 ```
 system parts:
 ```bash
-pacstrap /mnt base linux linux-firmware vim
+pacstrap /mnt base linux linux-firmware vim efibootmgr #=> BIOS不需要安装efibootmgr
 ```
 file system table:
 ```bash
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
-## chroot to add configuration
+## chroot and add configurations
 ```bash
 arch-chroot /mnt #==> chroot to new system
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime #==> timezone settings
@@ -85,7 +86,7 @@ vim etc/hosts #==> edit hosts file as below
 passwd #==> password for root
 ```
 
-## download more softwares 
+## download softwares 
 ```bash
 pacman -S grub networkmanager network-manager-applet base-devel linux-headers 
 #==> package: efibootmgr is needed for UEFI
@@ -111,7 +112,4 @@ Uncomment to allow members of group wheel to execute any command
 # %wheel ALL=(ALL:ALL) ALL
 
 pacman -S xf86-video-intel
-pacman -S xf86-video-amdgpu
-pacman -S nvidia nvidia-utils
 ```
-
