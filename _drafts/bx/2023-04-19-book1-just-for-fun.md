@@ -1,15 +1,4 @@
----
-categories: w books       
-tags: [book]
----
-
-Book 1:
-这将成为第一篇读书笔记:) ==> 打算开始在这个books分类下开始写一些读书笔记 摘录一些句子
-## Just for fun -Linus Torvalds
-* 介绍：本书[Just for fun](https://www.amazon.com/Just-Fun-Story-Accidental-Revolutionary/dp/0066620732)是`Linux`操作系统创始人[Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)的自传 是了解[Linux](https://en.wikipedia.org/wiki/Linux)和[开源运动](https://en.wikipedia.org/wiki/Open_source)的第一手资料
-
-* 一些摘录：
-
+[Linux Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) => [Just for fun](https://www.amazon.com/Just-Fun-Story-Accidental-Revolutionary/dp/0066620732)
 1. `信任不是没有用的，在人们相信你时，他们更容易领会你的建议。当然，你首先要建立别人之所以信任你的基础。对我而言，我猜想主要不是因为我发明了Linux的核心部分，而是因为我最终做出了将它放到互联网上、并且对所有希望使用或改进它的人公开源代码的决定。`
 
 2. `这企鹅可不是随便哪一只都行。Linux想让它有副爽透了的样子，就像刚刚喝下去一扎鲜啤酒，然后又体验了一次无与伦比的性高潮。除此之外，这只企鹅还一定要特别才行。于是，其他的企鹅都是黑嘴巴黑脚蹼，但Linux的企鹅却是黄嘴巴黄脚蹼，这使它看上去好像是鸭子与企鹅的杂交品种。也许它是唐老鸭在南极之旅中与一只当地企鹅一夜倾情的结晶。`
