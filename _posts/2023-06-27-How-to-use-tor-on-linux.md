@@ -12,4 +12,4 @@ test
 > 使用tor的前提是电脑能够连接到tor的relay
 {: .prompt-warning }
 
-![alt text](https://tse1-mm.cn.bing.net/th/id/OIP-C.5C-HdUPzS-6r_TA6-0LPyAHaEK?w=285&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7)
+![alt text](/assets/img/postimgs/tor.png)
