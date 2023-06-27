@@ -2,9 +2,6 @@
 categories: 2023 06
 tags: [linux, tricks]
 pin: false
-image:
-  path: /assets/img/postimgs/tor.png
-  alt: rsdf sdfl .
 ---
 
 
@@ -14,3 +11,7 @@ test
 这篇文章是在debian上安装使用tor代理的过程
 > 使用tor的前提是电脑能够连接到tor的relay
 {: .prompt-warning }
+
+![lsdf](../../assets/img/postimgs/google.png)
+![lsdf](../../assets/img/postimgs/tor.png)
+![lsdf](../../assets/img/postimgs/torrelay.png)
