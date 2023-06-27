@@ -16,5 +16,3 @@ test
 
 fuck
 fuck 
-
-![alt text](/assets/img/postimgs/tor.png)
