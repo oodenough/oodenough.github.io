@@ -12,11 +12,5 @@ test
 > 使用tor的前提是电脑能够连接到tor的relay
 {: .prompt-warning }
 
-![abc text](/assets/img/postimgs/tor.png)
-
-fuck
 
 ![abc text](/assets/img/postimgs/torrelay.png)
-fuck
-
-![abc text](/assets/img/postimgs/google.png)
