@@ -3,7 +3,7 @@
 icon: fas fa-info-circle
 order: 4
 ---
-
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 I am a technology enthusiast and a student. I love programming and technology, and enjoy exploring new technologies and solving technical problems. In my blog, I share a variety of articles on programming and technology, covering topics such as front-end, back-end, databases, cloud computing, and more. My goal is to help readers who are learning programming and technology, as well as those who need to stay up-to-date with the latest technologies and solve technical problems in their work.
 
 I believe that learning and sharing are the best ways to improve one's technical skills. In my blog, I share my learning experiences and insights, and also welcome readers to share their own learning experiences and insights. I hope that my blog can be a platform for learning and sharing, and benefit more people.
