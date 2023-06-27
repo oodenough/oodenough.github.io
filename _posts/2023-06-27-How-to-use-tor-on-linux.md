@@ -13,3 +13,8 @@ test
 {: .prompt-warning }
 
 ![alt text](/assets/img/postimgs/tor.png)
+
+fuck
+fuck 
+
+![fuck text](/assets/img/postimgs/tor.png)
