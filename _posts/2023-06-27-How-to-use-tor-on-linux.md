@@ -2,6 +2,7 @@
 categories: 2023 06
 tags: [linux, tricks]
 pin: false
+pa
 ---
 
 
