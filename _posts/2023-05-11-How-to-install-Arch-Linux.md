@@ -10,7 +10,7 @@ device list #==> list available internet device
 station wlan0 scan #==> tell the wlan0 to scan network
 station wlan0 get-networks #==> list networks
 station wlan0 connect wifiname #==> connect/passwords may be needed
-exit #==> exit the interactive prompt/ 
+exit #=> exit the interactive prompt/ 
 ping google.com #==> test
 vim /etc/pacman.d/mirrorlist #==> edit the resource file
 
