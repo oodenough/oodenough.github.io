@@ -3,8 +3,11 @@ categories: 2023 06
 tags: [linux, tricks]
 pin: false
 ---
-![alt text](/assets/img/postimgs/tor.png)
+
 ## 开始安装之前
+
+![alt text](/assets/img/postimgs/tor.png)
+
 test
 `tor`的全称是`the onion router`,是用来对抗互联网审查的一个开源软件。
 这篇文章是在debian上安装使用tor代理的过程
