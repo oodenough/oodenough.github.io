@@ -14,8 +14,7 @@ test
 > 使用tor的前提是电脑能够连接到tor的relay
 {: .prompt-warning }
 
-![alt text](/assets/img/postimgs/torrelay.png){: width="972" height="589" }
-_Full screen width and center alignment_
+![alt text](/assets/img/postimgs/torrelay.png)
 
 fuck
 fuck
