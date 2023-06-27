@@ -2,6 +2,9 @@
 categories: 2023 06
 tags: [linux, tricks]
 pin: false
+image:
+  path: /assets/img/postimgs/tor.png
+  alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
 ## 开始安装之前
@@ -19,4 +22,4 @@ fuck
 ![alt text](/assets/img/postimgs/tor.png)
 fuck
 fu
-![alt text](/assets/img/postimgs/torrelay.png)
+![alt text](/assets/img/postimgs/tor.png)
