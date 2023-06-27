@@ -17,4 +17,4 @@ test
 fuck
 fuck 
 
-![fuck text](/assets/img/postimgs/tor.png)
+![alt text](/assets/img/postimgs/tor.png)
