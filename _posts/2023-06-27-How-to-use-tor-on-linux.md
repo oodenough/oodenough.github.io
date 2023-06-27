@@ -11,3 +11,6 @@ test
 这篇文章是在debian上安装使用tor代理的过程
 > 使用tor的前提是电脑能够连接到tor的relay
 {: .prompt-warning }
+
+![Desktop View](/assets/img/postimgs/tor.png){: width="972" height="589" }
+_Full screen width and center alignment_
