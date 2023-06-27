@@ -1,3 +1,2 @@
-**welcome to my blog** :)
+**welcome to my blog** :) 
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
