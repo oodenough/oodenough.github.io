@@ -12,3 +12,5 @@ image:
 
 ## 开始安装之前
 `tor`的全称是`the onion router`,是用来保护互联网隐私的
+
+test
