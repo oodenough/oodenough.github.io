@@ -3,8 +3,7 @@ categories: 2023 06
 tags: [linux, tricks]
 pin: false
 ---
-
-
+![alt text](/assets/img/postimgs/tor.png)
 ## 开始安装之前
 test
 `tor`的全称是`the onion router`,是用来对抗互联网审查的一个开源软件。
@@ -16,4 +15,3 @@ test
 
 fuck
 fuck
-![alt text](/assets/img/postimgs/tor.png)
