@@ -3,8 +3,8 @@ categories: 2023 06
 tags: [linux, tricks]
 pin: false
 image:
-  path: /assets/img/postimgs/google.png
-  alt: althere
+  path: /assets/img/postimgs/tor.png
+  alt: rsdf sdfl .
 ---
 
 
