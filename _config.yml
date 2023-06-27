@@ -97,7 +97,7 @@ comments:
   # Giscus options › https://giscus.app
   giscus:
     repo: oodenough/blogcomments # <gh-username>/<repo>
-    repo_id: oodenough/blogcomments
+    repo_id: oodenough/blogcomments 
     category: Announcements
     category_id:
     mapping: # optional, default to 'pathname'
