@@ -3,7 +3,7 @@
 icon: fas fa-info-circle
 order: 4
 ---
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![cat](https://media.giphy.com/media/13HBDT4QSTpveU/giphy.gif)
 
 I am a technology enthusiast and a student. I love programming and technology, and enjoy exploring new technologies and solving technical problems. 
 
