@@ -1,7 +1,7 @@
 ---
 categories: 2023 04
 tags: [linux]
-pin: true
+pin: false
 ---
 
 * just some linux commands
