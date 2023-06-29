@@ -117,7 +117,7 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
 
 点击访问 [tor测试站点](https://check.torproject.org) 
 
-## nyx
+## nyx图形化界面
 
 
 `nyx` 在安装 tor 的时候默认一并安装，是一个与 tor 配合使用的流量监控界面 
@@ -125,3 +125,6 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
 
 
 ![](/postimgs/nyx.png)
+
+
+![cat](https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif)
