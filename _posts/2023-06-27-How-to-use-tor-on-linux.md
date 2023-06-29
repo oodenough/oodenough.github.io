@@ -11,7 +11,7 @@ pin: false
 
 
 
-![](/assets/img/postimgs/tor.png)
+![](/postimgs/tor.png)
 
 
 
@@ -20,7 +20,7 @@ pin: false
 
 
 
-![alt text](/assets/img/postimgs/torrelay.png)
+![alt text](/postimgs/torrelay.png)
 
 ## 安装
 
@@ -114,4 +114,4 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
 `nyx` 在安装 tor 的时候默认一并安装，是一个与 tor 配合使用的流量监控界面 
 
 
-![](assets/img/../../../assets/img/postimgs/nyx.png)
+![](/postimgs/nyx.png)
