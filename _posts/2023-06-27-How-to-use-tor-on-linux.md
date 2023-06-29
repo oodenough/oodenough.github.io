@@ -138,7 +138,7 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
 * [tor firefox](https://www.tecmint.com/use-tor-network-in-web-browser/)
 
 
-> `在使用Tor代理服务时请遵守当地法律法规`,确保合规操作。
+> 在使用Tor时请遵守当地法律法规
 {: .prompt-danger }
 
 
