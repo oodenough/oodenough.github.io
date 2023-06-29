@@ -114,7 +114,8 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
 
 3. 测试
    
-   点击访问 [tor测试站点](https://check.torproject.org) 
+
+点击访问 [tor测试站点](https://check.torproject.org) 
 
 ## nyx
 
