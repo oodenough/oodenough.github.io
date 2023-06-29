@@ -6,16 +6,14 @@ pin: false
 ## 简介
 
 
-`tor`的全称是[the onion router](https://torproject.org),是用来保护互联网隐私的一个开源软件。
-
-
-这篇文章是在debian上安装使用tor代理的过程。
-
-
 ![](/postimgs/tor.png)
 
 
-> 使用tor的 `前提` 是能够连接到tor的节点(relay)
+`tor`的全称是[the onion router](https://torproject.org),是用来保护互联网隐私的一个开源软件。
+
+这篇文章是在debian上安装使用tor代理的过程。
+
+> 使用tor的 `前提` 是能够连接到tor的relay 见下图
 {: .prompt-warning }
 
 
@@ -131,6 +129,17 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
 
 ![](/postimgs/nyx.png)
 
+
+## 参考链接
+
+
+* [tor 命令行](https://justhackerthings.com/post/using-tor-from-the-command-line/)
+
+* [tor firefox](https://www.tecmint.com/use-tor-network-in-web-browser/)
+
+
+> `在使用Tor代理服务时请遵守当地法律法规`,确保合规操作。
+{: .prompt-danger }
 
 
 ![cat](https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif)
