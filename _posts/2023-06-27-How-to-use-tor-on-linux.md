@@ -9,12 +9,12 @@ pin: false
 `tor`的全称是`the onion router`,是用来保护互联网隐私的一个开源软件。
 这篇文章是在debian上安装使用tor代理的过程。
 
-![alt text](\assets\img\postimgs\tor.png)
+![alt text](C:\Users\27300\Documents\oodenough.github.io\assets\img\postimgs\tor.png)
 
 > 使用tor的 `前提` 是能够连接到tor的节点(relay)
 > {: .prompt-info }
 
-![alt text](\assets\img\postimgs\torrelay.png)
+![alt text](C:\Users\27300\Documents\oodenough.github.io\assets\img\postimgs\torrelay.png)
 
 ## 安装
 
@@ -88,14 +88,17 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
    ```bash
    #SocksPort 9050
    ```
+
 2. 在火狐浏览器中找到 `Network Settings` 开始手动设置:
-
 * `SOCKS Host` 为 `127.0.0.1` 
-* `Port` 为 `9050` 
-* 使用 `SOCKS v5` 代理选项
-* `No Proxy for` 为 `127.0.0.1` 
-* 勾选 `Proxy DNS when using SOCKS v5` 
 
+* `Port` 为 `9050` 
+
+* 使用 `SOCKS v5` 代理选项
+
+* `No Proxy for` 为 `127.0.0.1` 
+
+* 勾选 `Proxy DNS when using SOCKS v5` 
 3. 测试
    
    点击访问 [tor测试站点](https://check.torproject.org) 
@@ -104,4 +107,4 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
 
 `nyx` 在安装 tor 的时候默认一并安装，是一个与 tor 配合使用的流量监控界面 
 
-![Alt Text](\assets\img\postimgs\nyx.png)
+![Alt Text](C:\Users\27300\Documents\oodenough.github.io\assets\img\postimgs\nyx.png)
