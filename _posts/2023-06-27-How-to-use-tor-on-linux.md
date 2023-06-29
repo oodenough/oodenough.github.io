@@ -3,7 +3,6 @@ categories: 2023 06
 tags: [linux, tricks]
 pin: false
 ---
-
 ## 简介
 
 
@@ -21,6 +20,7 @@ pin: false
 
 
 ![alt text](/postimgs/torrelay.png)
+
 
 ## 安装
 
@@ -78,6 +78,7 @@ torify curl ifconfig.me 2>/dev/null
 * `torify` => 通过 `tor` 执行 `curl` 命令
 * `2>/dev/null` => 重定向 `torify` 产生的无关信息
 
+
 ## 获取新ip
 
 
@@ -91,16 +92,19 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
 
 然后再根据 `测试` 中给出的步骤重新检查 `ip` 
 
+
 ## 为firefox浏览器开启tor
 
 
 1. 编辑配置文件 `torrc` 找到并注释
    
+
    ```bash
    #SocksPort 9050
    ```
 
 2. 在火狐浏览器中找到 `Network Settings` 开始手动设置:
+
 
 * `SOCKS Host` 为 `127.0.0.1` 
 
@@ -112,10 +116,12 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
 
 * 勾选 `Proxy DNS when using SOCKS v5` 
 
-3. 测试
    
+3. 测试
+
 
 点击访问 [tor测试站点](https://check.torproject.org) 
+
 
 ## nyx图形化界面
 
@@ -125,6 +131,7 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
 
 
 ![](/postimgs/nyx.png)
+
 
 
 ![cat](https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif)
