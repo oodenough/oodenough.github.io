@@ -16,7 +16,7 @@ pin: false
 
 
 > 使用tor的 `前提` 是能够连接到tor的节点(relay)
-> {: .prompt-info }
+{: .prompt-info }
 
 
 
