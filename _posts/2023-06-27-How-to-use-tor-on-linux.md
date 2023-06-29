@@ -46,7 +46,7 @@ sudo vi /etc/torrc
 #ControlPort 9051
 ```
 
-再找到下面这行把 `1` 改成 `0` 
+再找到下面这行 注释并把 `1` 改成 `0` 
 
 ```bash
 #CookieAuthentication 1
@@ -115,12 +115,9 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
 * `No Proxy for` 为 `127.0.0.1` 
 
 * 勾选 `Proxy DNS when using SOCKS v5` 
-
    
-3. 测试
 
-
-点击访问 [tor测试站点](https://check.torproject.org) 
+3. 点击访问 [tor测试站点](https://check.torproject.org) 
 
 
 ## nyx图形化界面
