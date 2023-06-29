@@ -117,7 +117,7 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
 * 勾选 `Proxy DNS when using SOCKS v5` 
    
 
-3. 点击访问 [tor测试站点](https://check.torproject.org) 
+最后再来测试一下，点击访问 [tor测试站点](https://check.torproject.org) 
 
 
 ## nyx图形化界面
