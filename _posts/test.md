@@ -10,4 +10,4 @@ pin: false
 this is a test post
 
 
-![](test.png)
+![](./2023/test.png)
