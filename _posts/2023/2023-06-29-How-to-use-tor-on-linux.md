@@ -6,7 +6,7 @@ pin: false
 ## 简介
 
 
-![](/postimgs/tor.png)
+![](/postimgs/2023/tor.png)
 
 
 `tor`的全称是[the onion router](https://torproject.org),是用来保护互联网隐私的一个开源软件。
@@ -17,7 +17,7 @@ pin: false
 {: .prompt-warning }
 
 
-![alt text](/postimgs/torrelay.png)
+![alt text](/postimgs/2023/torrelay.png)
 
 
 ## 安装
@@ -91,7 +91,7 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
 然后再根据 `测试` 中给出的步骤重新检查 `ip` 
 
 
-![newip](/postimgs/newtorip.png)
+![newip](/postimgs/2023/newtorip.png)
 
 
 ## 为firefox浏览器开启tor
@@ -127,7 +127,7 @@ echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
 执行 `nyx` 命令即可打开 nyx
 
 
-![](/postimgs/nyx.png)
+![](/postimgs/2023/nyx.png)
 
 
 ## 参考链接
