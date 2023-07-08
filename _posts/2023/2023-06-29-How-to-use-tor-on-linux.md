@@ -1,6 +1,6 @@
 ---
 categories: 2023 06
-title: 如何在debian上安装使用tor
+title: 如何在 debian 上安装使用 tor
 tags: [linux, tricks]
 pin: false
 ---
