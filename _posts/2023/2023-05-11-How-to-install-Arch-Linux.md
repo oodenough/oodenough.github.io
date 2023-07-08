@@ -4,7 +4,7 @@ categories: 2023 05
 tags: [linux]
 ---
 
-![arch](../../postimgs/2023/arch-logo.png)
+![arch](/postimgs/2023/arch-logo.png)
 
 ## 联网
 
@@ -90,6 +90,14 @@ lsblk
 fdisk -l
 ```
 
+特别注意其中的**磁盘标签类型**，英文 `disk label tepy` ，BIOS 安装得是 `dos`，UEFI 得是 `gpt`
+
+如果不对，可以下载 **gptdisk** 格式化磁盘后设置磁盘标签类型
+
+```bash
+gdisk /dev/sda #==> pacman -S gptdisk
+```
+
 对 `sda` 分盘
 
 ```bash
@@ -120,10 +128,6 @@ BIOS电脑不需要 `efi分区`，可以这么分：
 
 UEFI电脑额外需要一个 `efi分区` ，其他的都同 BIOS 一样。
 
-
-gdisk /dev/sda #==> pacman -S gptdisk
-efi的disk lable type是`gpt`而不是`dos` 
-
 **关于文件系统**:
 
 为 `swap分区` 创建文件系统
@@ -149,14 +153,13 @@ mkfs.ext4 /dev/sda1
 
 接下来开始 `挂载` 各个分区
 
+若有swap先启用swap分区，挂载`顺序`从里往外，没有的目录手动创建。
+
 ```bash
-swapon /dev/sda1 #==> 若有swap先启用swap分区
+swapon /dev/sda1 
 mount /dev/sda2 /mnt/boot/efi
 mount /dev/sda3 /mnt #==> 根分区挂 /mnt
 ```
-
-> 挂载`顺序`从里往外，没有的目录手动创建。
-{: .prompt-tip }
 
 ## 下载系统组件
 
