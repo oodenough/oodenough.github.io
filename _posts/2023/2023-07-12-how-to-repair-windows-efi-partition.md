@@ -8,7 +8,7 @@ tags: [tricks]
 
 **EFI分区**里有 `bootmanager` 和 `bootloader`.
 
-装有多个系统的电脑开机时，首先进入**bootmanager**界面，选择加载哪个**bootloader**，然后**bootloader**再 `boot` 对应系统。
+装有多个操作系统的电脑开机时，首先进入**bootmanager**界面，选择加载哪个**bootloader**，然后**bootloader**再 `boot` 对应系统。
 
 ## 创建 EFI 分区
 
