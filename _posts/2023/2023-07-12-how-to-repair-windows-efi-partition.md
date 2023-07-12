@@ -108,4 +108,4 @@ bcdboot C:\Windows /l en-us /s k: /f ALL
 
 到此结束，重启后电脑就正常boot了。
 
-[参考链接](https://woshub.com/how-to-repair-uefi-bootloader-in-windows-8/)_
+[参考链接](https://woshub.com/how-to-repair-uefi-bootloader-in-windows-8/)
