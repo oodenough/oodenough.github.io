@@ -84,7 +84,7 @@ cd /d K:
 
 复制`bcd bootloader`的配置文件到当前目录
 
-```
+```Python
 %WINDIR%\System32\Config\BCD-Template
 ```
 
