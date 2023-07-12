@@ -2,7 +2,6 @@
 title: Windows 修复 EFI 分区 
 categories: 2023 07
 tags: [tricks]
-ren BCD BCD.bak
 ---
 
 ![windows11](/postimgs/2023/windows11.png)
