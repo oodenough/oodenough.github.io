@@ -1,6 +1,6 @@
 ---
 title: 如何将Qt配置到vscode
-categories: 2023 10
+categories: [Tools]
 tags: [HowTo]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Windows 修复 EFI 分区 
-categories: 2023 07
+categories: [OS]
 tags: [Windows, HowTo]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 如何安装 Arch Linux
-categories: 2023 05
+categories: [OS]
 tags: [Linux, HowTo]
 ---
 
