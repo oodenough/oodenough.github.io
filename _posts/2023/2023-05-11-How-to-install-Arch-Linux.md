@@ -1,7 +1,7 @@
 ---
 title: 如何安装 Arch Linux
 categories: [OS]
-tags: [Linux, HowTo]
+tags: [Linux]
 ---
 
 ![arch](/assets/img/2023/arch-logo.png)

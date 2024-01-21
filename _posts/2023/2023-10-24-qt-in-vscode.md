@@ -1,7 +1,7 @@
 ---
 title: 如何将Qt配置到vscode
 categories: [Tools]
-tags: [HowTo]
+tags: [VSCode, Qt]
 ---
 
 ![](/assets/img/2023/qt-vscode.png)
