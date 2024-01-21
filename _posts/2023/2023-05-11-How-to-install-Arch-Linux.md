@@ -4,7 +4,7 @@ categories: 2023 05
 tags: [Linux, HowTo]
 ---
 
-![arch](/assets/imgs/2023/arch-logo.png)
+![arch](/assets/img/2023/arch-logo.png)
 
 ## 联网
 

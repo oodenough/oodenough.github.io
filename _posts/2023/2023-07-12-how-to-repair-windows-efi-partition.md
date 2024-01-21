@@ -4,7 +4,7 @@ categories: 2023 07
 tags: [tricks, Windows, HowTo]
 ---
 
-![windows11](/assets/imgs/2023/windows11.png)
+![windows11](/assets/img/2023/windows11.png)
 
 **EFI分区**里有 `bootmanager` 和 `bootloader`.
 

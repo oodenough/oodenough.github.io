@@ -4,7 +4,7 @@ categories: 2023 10
 tags: [tricks, HowTo]
 ---
 
-![](/assets/imgs/2023/qt-vscode.png)
+![](/assets/img/2023/qt-vscode.png)
 
 ”将Qt配置到vscode“指的是把`Qt库`添加到vscode，并在vscode中使用`qmake`和`mingw32-make`两个工具完成`C++`Qt项目的构建和编译。
 
