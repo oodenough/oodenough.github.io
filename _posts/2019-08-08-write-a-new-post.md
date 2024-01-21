@@ -403,7 +403,7 @@ Or adding `render_with_liquid: false` (Requires Jekyll 4.0 or higher) to the pos
 
 You can embed a video with the following syntax:
 
-```liquid
+```markdown
 {% include embed/{Platform}.html id='{ID}' %}
 ```
 Where `Platform` is the lowercase of the platform name, and `ID` is the video ID.
