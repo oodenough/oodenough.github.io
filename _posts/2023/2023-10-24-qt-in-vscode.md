@@ -1,7 +1,7 @@
 ---
 title: 如何将Qt配置到vscode
 categories: 2023 10
-tags: [tricks, HowTo]
+tags: [HowTo]
 ---
 
 ![](/assets/img/2023/qt-vscode.png)

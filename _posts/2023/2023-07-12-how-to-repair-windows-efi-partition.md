@@ -1,7 +1,7 @@
 ---
 title: Windows 修复 EFI 分区 
 categories: 2023 07
-tags: [tricks, Windows, HowTo]
+tags: [Windows, HowTo]
 ---
 
 ![windows11](/assets/img/2023/windows11.png)
