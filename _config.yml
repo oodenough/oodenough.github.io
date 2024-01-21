@@ -16,7 +16,7 @@ timezone:
 
 title: Jiahao Guan # the main title
 
-tagline: Site for blogs # it will display as the sub-title
+tagline: A doc site for my blogs # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   For technical writing.
@@ -74,7 +74,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://lh3.googleusercontent.com/a/AGNmyxbkUwGNYDtAKnVERa
+avatar: https://64.media.tumblr.com/5275bcee90a672e80cb93b18504d3669/1dfe46e5317f7a52-c6/s1280x1920/8406e01c57f338e927aa0e36bf11da96b1f9932a.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
