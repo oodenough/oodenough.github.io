@@ -8,8 +8,6 @@ image:
   alt: Arch Linux
 ---
 
-![arch](/assets/img/2023/arch-logo.png)
-
 ## 联网
 
 进入 `iwd` 的交互式提示符

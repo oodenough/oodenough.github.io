@@ -10,10 +10,6 @@ image:
 ---
 ## 简介
 
-
-![](/assets/img/2023/tor.png)
-
-
 `tor`的全称是[the onion router](https://torproject.org),是用来保护互联网隐私的一个开源软件。
 
 这篇文章是在debian上安装使用tor代理的过程。

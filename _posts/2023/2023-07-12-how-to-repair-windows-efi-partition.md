@@ -8,9 +8,7 @@ image:
   alt: Windows 11
 ---
 
-![windows11](/assets/img/2023/windows11.png)
-
-**EFI分区**里有 `bootmanager` 和 `bootloader`.
+**EFI分区**里有 `bootmanager` 和 `bootloader`
 
 装有多个操作系统的电脑开机时，首先进入**bootmanager**界面，选择加载哪个**bootloader**，然后**bootloader**再 `boot` 对应系统。
 

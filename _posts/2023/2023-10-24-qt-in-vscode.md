@@ -8,8 +8,6 @@ image:
   alt: Visual Studio Code
 ---
 
-![](/assets/img/2023/qt-vscode.png)
-
 ”将Qt配置到vscode“指的是把`Qt库`添加到vscode，并在vscode中使用`qmake`和`mingw32-make`两个工具完成`C++`Qt项目的构建和编译。
 
 首先在Windows上安装好[vscode](https://code.visualstudio.com/download)和[Qt](https://www.qt.io/download-qt-installer-oss?hsCtaTracking=99d9dd4f-5681-48d2-b096-470725510d34%7C074ddad0-fdef-4e53-8aa8-5e8a876d6ab4)
