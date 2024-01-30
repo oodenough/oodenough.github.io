@@ -1,7 +1,7 @@
 ---
 title: 如何在 debian 上安装使用 tor
 categories: [OS, Linux]
-tags: [Linux, Network]
+tags: [Debian, Network]
 pin: false
 image:
   path: ./assets/img/2023/tor.png
