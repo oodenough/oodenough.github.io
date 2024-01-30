@@ -1,6 +1,6 @@
 ---
 title: Windows 修复 EFI 分区 
-categories: [OS]
+categories: [OS, Windows]
 tags: [Windows]
 image:
   path: ./assets/img/2023/windows11.png

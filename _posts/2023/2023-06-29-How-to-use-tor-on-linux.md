@@ -1,6 +1,6 @@
 ---
 title: 如何在 debian 上安装使用 tor
-categories: [OS]
+categories: [OS, Linux]
 tags: [Linux, Network]
 pin: false
 image:
