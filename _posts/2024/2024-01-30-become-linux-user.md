@@ -4,9 +4,9 @@ categories: [OS, Linux]
 tags: [Ubuntu]
 pin: true
 image:
-  path: ./assets/img/2024/ubuntu.png
+  path: ./assets/img/2024/linux.jpeg
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: Ubuntu Logo
+  alt: Linux Mascot
 ---
 
 大概三四个月前，我删除了windows系统，正式成为了[2.09%](https://truelist.co/blog/linux-statistics/)的linux用户。
