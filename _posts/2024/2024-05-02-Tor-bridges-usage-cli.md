@@ -41,7 +41,7 @@ Bridge obfs4 89.163.181.170:443 A0D27B876F1DD14A15C223F48BD9CD4A6BC4517E cert=nO
 journalctl -exft Tor
 ```
 
-# 检查链接
+# 检查连接
 
 ```bash
 ╰─➤  torify curl https://check.torproject.org/api/ip
