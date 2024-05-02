@@ -1,13 +1,13 @@
 ---
 title: Tor bridges in CLI
 categories: [Tools]
-tags: [Network]
+tags: [Network, Linux, mac]
 pin: false
 ---
 
-简单记录如何给命令行的tor配置网桥。
+[上一篇](https://oodenough.github.io/posts/How-to-use-tor-on-linux/)写了Tor的安装和基本配置, 这一篇简单记录如何给命令行的tor配置网桥。
 
-Tor的安装和基本配置可以看[这里](https://oodenough.github.io/posts/How-to-use-tor-on-linux/)
+示例用了apt来安装，mac用homebrew就行。
 
 网桥配置参考了[这里](https://askubuntu.com/questions/1183145/how-can-i-configure-tor-with-bridge-and-privoxy-to-proxy-entire-system)
 
@@ -19,7 +19,7 @@ Tor的安装和基本配置可以看[这里](https://oodenough.github.io/posts/H
 sudo apt install obfs4proxy
 ```
 
-# 配置网桥
+## 配置网桥
 
 在 `torrc` 里添加：
 
@@ -33,7 +33,7 @@ Bridge obfs4 89.163.181.170:443 A0D27B876F1DD14A15C223F48BD9CD4A6BC4517E cert=nO
 
 可以多加几个网桥到 `torrc` 里，只配置一个的话日志里还会有警告信息。
 
-# tor 日志
+## tor 日志
 
 重启tor服务后可以用下面的命令查看日志：
 
@@ -41,14 +41,14 @@ Bridge obfs4 89.163.181.170:443 A0D27B876F1DD14A15C223F48BD9CD4A6BC4517E cert=nO
 journalctl -exft Tor
 ```
 
-# 检查连接
+## 检查连接
 
 ```bash
 ╰─➤  torify curl https://check.torproject.org/api/ip
 {"IsTor":true,"IP":"185.220.101.149"}#
 ```
 
-# 如何使用
+## 如何使用
 
 如[上一篇](https://oodenough.github.io/posts/How-to-use-tor-on-linux/)所讲可以用torify命令， 还可以用 `torsocks` 命令。
 
@@ -63,3 +63,8 @@ Tor mode activated. Every command will be torified for this shell.
 ╰─➤  . torsocks off
 Tor mode deactivated. Command will NOT go through Tor anymore.
 ```
+
+## 代理端口
+
+tor: 9050
+tor browser: 9150
