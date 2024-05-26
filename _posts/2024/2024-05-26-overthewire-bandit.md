@@ -9,6 +9,8 @@ pin: false
 
 包含各level的密码，以及通关思路，简单的就只给出一条命令和通关密码。
 
+如果有错误，欢迎评论指出或者邮件联系。
+
 # Bandit
 
 ## level 0 to 1 
@@ -172,13 +174,17 @@ awhqfNnAbc1naukrpqDYcF95h7HoMTrC
 
 VxCazJaVykI6W36BkBU0mJTCM8rR95XT
 
-setuid
+这里用到setuid
 
 `-rwsr-xr-x 1 root root 72056 Nov 23  2022 /usr/bin/passwd`
 
 修改密码即是修改`/etc/shadow`文件，但是该文件仅root用户有权限修改
 
 普通用户之所以能修改自己的密码则是因为`passwd`有setuid位`s`,所以普通用户能够暂时以root（passwd的owner）身份修改密码
+
+通过家目录下的bandit20-do，bandit19能暂时以bandit20的身份执行命令
+
+`./bandit20-do cat /etc/bandit_pass/bandit20`
 
 ## level 20 to 21 
 
