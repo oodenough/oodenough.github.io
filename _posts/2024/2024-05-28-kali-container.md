@@ -1,5 +1,5 @@
 ---
-title: 容器kali的基本使用
+title: kali容器的基本使用
 categories: [OS, mac]
 tags: [docker, kali]
 pin: false
