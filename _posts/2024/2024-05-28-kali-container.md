@@ -51,7 +51,7 @@ docker依赖于linux内核，windows有WSL，mac则选择[colima](https://github
 
 还可以修改`~/.docker/config.json`配置文件，这样容器启动就默认使用代理。
 
-注意`localhost`在容器里要用`host.docker.internal`替代.
+注意`localhost`在容器里要用`host.docker.internal`替代. [link](https://stackoverflow.com/questions/24319662/from-inside-of-a-docker-container-how-do-i-connect-to-the-localhost-of-the-mach)
 
 更多内容请参考[官方文档](https://docs.docker.com/network/proxy/)或[stackoverflow](https://stackoverflow.com/questions/47827496/how-to-configure-docker-container-proxy)
 
