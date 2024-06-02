@@ -1,7 +1,7 @@
 ---
 title: Overthewire Leviathan 通关
-categories: [OS, linux]
-tags: [linux]
+categories: [OS, Linux]
+tags: [Linux]
 pin: false
 ---
 
