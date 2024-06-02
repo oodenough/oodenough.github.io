@@ -79,7 +79,7 @@ leviathan7:8GpZ5f8Hze
 
 `for i in {0000..9999}; do ~/leviathan6 $i; done`
 
-下面这个就行不通：
+下面这个就行不通
 
 `seq -w 0 9999 | xargs -I {} ~/leviathan6 {}`
 
