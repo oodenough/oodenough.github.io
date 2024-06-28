@@ -155,12 +155,12 @@ mkfs.ext4 /dev/sda1
 
 接下来开始 `挂载` 各个分区
 
-若有swap先启用swap分区，挂载`顺序`从里往外，没有的目录手动创建。
+若有swap先启用swap分区，挂载`顺序`从外往里，没有的目录手动创建。
 
 ```bash
 swapon /dev/sda1 
-mount /dev/sda2 /mnt/boot/efi
 mount /dev/sda3 /mnt #==> 根分区挂 /mnt
+mount /dev/sda2 /mnt/boot/efi
 ```
 
 ## 下载系统组件
