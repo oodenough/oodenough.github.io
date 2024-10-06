@@ -50,7 +50,7 @@ google_site_verification: # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: 'G-8TRD718DPT'
+  id: ''
   # fill in your Google Analytics ID
 
 # Prefer color scheme setting.
@@ -84,7 +84,7 @@ social_preview_image: # string, local or CORS resources
 toc: true
 
 comments:
-  active: giscus
+  active:
   # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
@@ -95,11 +95,11 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: oodenough/oodenough.github.io
-    repo_id: oodenough/oodenough.github.io
-    category: Announcements
-    category_id: 1
-    mapping: URL
+    repo:
+    repo_id:
+    category:
+    category_id:
+    mapping:
     input_position: # optional, default to 'bottom'
     lang: # optional, default to the value of `site.lang`
     reactions_enabled: # optional, default to the value of `1`
