@@ -1,7 +1,5 @@
 ---
 title: 成为Linux用户
-categories: [OS, Linux]
-tags: [GNU, VeraCrypt, Arch Linux, Ubuntu, ZorinOS]
 pin: false
 image:
   path: ./assets/img/2024/linux.jpeg

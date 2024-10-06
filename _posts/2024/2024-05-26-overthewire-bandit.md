@@ -1,7 +1,5 @@
 ---
 title: Overthewire Bandit 通关
-categories: [OS, Linux]
-tags: [Linux]
 pin: false
 ---
 

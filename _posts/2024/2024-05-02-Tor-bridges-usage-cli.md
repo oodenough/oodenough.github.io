@@ -1,7 +1,5 @@
 ---
 title: Tor bridges in CLI
-categories: [Tools]
-tags: [Network, Linux, mac]
 pin: false
 ---
 

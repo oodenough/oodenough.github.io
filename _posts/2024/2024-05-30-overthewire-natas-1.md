@@ -1,7 +1,5 @@
 ---
 title: Overthewire Natas 0-16 关
-categories: [OS, Linux]
-tags: [Linux, web security]
 pin: false
 ---
 

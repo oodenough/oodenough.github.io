@@ -1,7 +1,5 @@
 ---
 title: Perform a simple Wi-Fi attack using Aircrack-ng
-categories: [OS, Linux]
-tags: [Aircrack-ng, Wi-Fi]
 pin: false
 image:
   path: ./assets/img/2024/aircrack-ng.jpeg
