@@ -46,7 +46,7 @@ networks:
                 - subnet: 172.28.0.0/16
 ```
 
-建好相应的目录结构后用`docker compose up -d`命令启动容器，首先去3000端口完成initial setup.
+建好相应的目录结构后用`docker compose up -d`命令启动容器，首先通过3000端口完成initial setup.
 
 可以用`ssh -L 8000:localhost:3000 -C -N -l root ip_addr`命令将本地的8000端口转发到服务器的3000端口，然后打开浏览器访问`localhost:8000`完成设置。
 
@@ -98,6 +98,6 @@ networks:
 
 ![](https://i.imgur.com/r2ayda5.png)
 
-不过能用上自建的dns服务器已经是一大进步了，加密dns改日再折通吧。
+不过能用上自建的dns服务器已经是一大进步了，加密dns改日再折腾吧。
 
 ![](https://i.imgur.com/NUDlWLR.png)
